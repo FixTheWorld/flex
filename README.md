@@ -1,2 +1,1 @@
-# mobile-flexible
-flexible mobile html5 page
+# flex cases and react code
