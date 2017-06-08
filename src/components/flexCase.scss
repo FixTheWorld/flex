@@ -1,0 +1,160 @@
+.cj-container{
+  border:solid 1px #eb5656;
+  border-radius: 5px;
+  width:100px;
+  height:100px;
+  margin:10px;
+  padding: 3px;
+  display: flex;
+}
+.dotCont{
+  border:sandybrown 1px solid;
+}
+.dot{
+  border:solid 1px #29c3db;
+  border-radius: 50%;
+  background-color:#29c3db;
+  width:30px;
+  height: 30px;
+  overflow: hidden;
+}
+span{
+  display: block;
+  padding:10px;
+  border-bottom: solid 1px #20db56;
+}
+.style1{
+  justify-content: center;
+}
+.style2{
+  justify-content: flex-end;
+}
+.style3{
+  align-items: center;
+}
+.style4{
+  justify-content:center;
+  align-items: center;
+}
+.style5{
+  justify-content:flex-end;
+  align-items: center;
+}
+.style6{
+  align-items: flex-end;
+}
+.style7{
+  align-items: flex-end;
+  justify-content: center;
+}
+.style8{
+  align-items: flex-end;
+  justify-content: flex-end;
+  +div:after {
+    content: ' ';
+    display: block;
+    border-top: solid 1px #9c45db;
+  }
+}
+.style9{
+  margin-top:20px;
+  margin-bottom:20px;
+  justify-content:space-between;
+}
+.style10{
+  flex-direction: column;
+  justify-content:space-between;
+}
+.style11{
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  +span:after{
+    content:"flex方向为垂直方向时，align-items就会变为水平方向";
+
+  }
+}
+.style12{
+  justify-content:space-between;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.style13{
+  flex-direction: column;
+  .dot:nth-child(2){
+    align-self: center;
+  }
+}
+.style14{
+  flex-direction: column;
+  justify-content: space-between;
+  .dot:nth-child(2){
+    align-self:flex-end;
+  }
+}
+.style15{
+  flex-direction: column;
+  .dot:nth-child(2){
+    align-self:center;
+  }
+  .dot:nth-child(3){
+    align-self:flex-end;
+  }
+}
+.style16{
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: space-between;
+  +span:after{
+    content: '使用换行将4点两行分布，justify-content右对齐，再利用align-content规定垂直方向上的间隔';
+  }
+}
+.style17{
+  flex-direction: column;
+  justify-content: space-between;
+  .dotCont{
+    display: flex;
+    justify-content: space-between;
+  }
+  +span:after{
+    content: "方式1：父类垂直方向+间距，子类水平方向+间距";
+  }
+}
+.style18{
+  flex-wrap: wrap;
+  align-content: space-between;
+  .dotCont{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+  +span:after{
+    content: "方式2：父类换行(默认是不换行)和间距，子类占空间100%，占据太多则进行换行+间距";
+  }
+}
+.style19{
+  flex-wrap: wrap;
+  align-content: space-between;
+  +span:after{
+    content: "换行+间距";
+  }
+}
+.style20{
+  flex-wrap: wrap;
+  .dotCont{
+    display: flex;
+    flex-basis: 100%;
+  }
+  .dotCont:nth-child(2){
+    justify-content: center;
+  }
+  .dotCont:nth-child(3){
+    justify-content: space-between;
+  }
+  +span:after{
+    content: "三个容器每个都占100%就会换行，之后设置内部的间距，注意要设置display:flex";
+  }
+}
+.style21{
+  flex-wrap: wrap;
+}

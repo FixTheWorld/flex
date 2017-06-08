@@ -1,0 +1,43 @@
+@import "common";
+
+.cj-main{padding:rem(30)}
+.cj-title{
+  font-size: 40px;
+  color:#222;
+}
+.cj-subtitle{
+  margin-top: rem(20);
+  font-size: 24px;
+  color:#b2b2b2;
+}
+.cj-num{
+  margin-left: rem(10);
+  font-size:28px;
+}
+.cj-pic{
+  margin-top:rem(30);
+  width: 100%;
+  height: rem(286);
+  border: solid 1px #bbb;
+  text-align: center;
+}
+.cj-content{
+
+  &-title-cont{
+    padding:rem(30) 0;
+    font-size: 32px;
+  }
+  &-title{
+    height:rem(33);
+    padding-left:rem(14);
+    line-height: rem(33);
+    border-left:solid 8px #29c3db;
+  }
+  &-text{
+    padding-bottom: rem(30);
+    font-size:28px;
+    color:#505050;
+    line-height:rem(42);
+    border-bottom: solid 1px #888;
+  }
+}

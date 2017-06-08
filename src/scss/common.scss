@@ -1,0 +1,8 @@
+@import "config";
+
+.cm-red{color:#eb5656;}
+.cm-fr{float: right}
+
+@function rem($px,$html-base:$html-base){
+  @return $px/$html-base*1rem;
+}
